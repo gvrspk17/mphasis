@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Prosperity",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c71f640c-eff4-49b7-bfc4-89c000d6111f",
+		"tenantId": "b176a0b3-5841-42ca-abbc-574d4808ba09"
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"name": "SourceDataset_nau",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "fsproperity",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Claim_id",
+				"type": "String"
+			},
+			{
+				"name": "Customer_id",
+				"type": "String"
+			},
+			{
+				"name": "Date_of_loss",
+				"type": "String"
+			},
+			{
+				"name": "Date_reported",
+				"type": "String"
+			},
+			{
+				"name": "Claim_type",
+				"type": "String"
+			},
+			{
+				"name": "Claim_amount",
+				"type": "String"
+			},
+			{
+				"name": "Claim_status",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
