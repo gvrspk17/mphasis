@@ -1,0 +1,17 @@
+{
+	"name": "SqlPool_Customer",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo.",
+			"table": "Insurance_Customer"
+		},
+		"sqlPool": {
+			"referenceName": "synapsededicatedpool",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

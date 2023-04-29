@@ -1,0 +1,17 @@
+{
+	"name": "Count",
+	"properties": {
+		"content": {
+			"query": "select \ncount(*)\nfrom [dbo.].[Insurance_Customer] a \njoin [dbo.].[Insurance_Premium] b on a.Customer_ID = b.Customer_id\njoin [dbo.].[Insurance_Claims] c on a.Customer_id = c.Customer_id and b.Customer_id = c.Customer_id \n\nselect count(*) from  [dbo.].[Insurance_Customer] a ---1250\nselect count(*) from  [dbo.].[Insurance_Claims] a ---10000 \nselect count(*) from  [dbo.].[Insurance_Premium] a  -----10000\n\n\nselect count(*) from [dbo].[Insurance_Data]\n\nselect count(*) from [dbo].[Insurance_Data_Premium]\nwhere customer_id = '1670267934'\n\n\nTruncate table [dbo.].[Insurance_Claims] ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapsededicatedpool",
+				"poolName": "synapsededicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

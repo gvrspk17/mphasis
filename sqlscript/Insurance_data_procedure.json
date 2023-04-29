@@ -1,0 +1,17 @@
+{
+	"name": "Insurance_data_procedure",
+	"properties": {
+		"content": {
+			"query": "Create Procedure SP_Insurance_Data \nAs \n\nBegin\n\nDrop table [Trn].[Insurance_Data]\n\nselect \na.Customer_id, \nConcat(a.First_name, ' - ' , a.Last_name) as Customer_Name,\na.Address, \na.City,\na.State,\na.Zip_Code,\na.Phone_number,\na.Gender,\nb.Policy_id,\nb.Policy_status,\nDatediff(year,b.Policy_end_date,b.Policy_start_date),\nb.Policy_start_date,\nb.Policy_end_date,\nb.Premium_amount,\nb.payment_method,\nb.Payment_date,\nb.policy_status,\nc.Claim_id, \nc.Claim_type,\nc.Claim_status,\nc.Claim_amount into [Trn].[Insurance_Data]\nfrom [dbo.].[Insurance_Customer] a \njoin [dbo.].[Insurance_Premium] b on a.Customer_ID = b.Customer_id\njoin [dbo.].[Insurance_Claims] c on a.Customer_id = c.Customer_id and b.Customer_id = c.Customer_id \n\nEnd",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapsededicatedpool",
+				"poolName": "synapsededicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

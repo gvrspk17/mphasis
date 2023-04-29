@@ -1,0 +1,25 @@
+{
+	"name": "trigger-sql",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Copy_to_Synapase_Claims",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/azfilesystem/blobs/",
+			"blobPathEndsWith": "Insurance_Claims.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/b1d8832d-5202-409a-b460-f41a203cc234/resourceGroups/az_Prosperity_Demo/providers/Microsoft.Storage/storageAccounts/azdatalakeprosperity",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

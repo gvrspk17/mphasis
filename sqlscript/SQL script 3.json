@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "DROP VIEW [dbo].[Insurance_Data_Premium]\nGO\n\nSET ANSI_NULLS ON\nGO\nSET QUOTED_IDENTIFIER ON\nGO\n\nCREATE VIEW [dbo].[Insurance_Data_Premium]\nAS select \nROW_NUMBER() Over (Order by a.Customer_id) as R_No,\na.Customer_id, \nConcat(a.First_name, ' - ' , a.Last_name) as Customer_Name,\na.Address, \na.City,\na.State,\na.Zip_Code,\na.Phone_number,\na.Gender,\nb.Policy_id,\nb.Policy_status,\nDatediff(year,b.Policy_end_date,b.Policy_start_date) as Policy_Year,\nb.Policy_start_date,\nb.Policy_end_date,\nb.Premium_amount,\nb.payment_method,\nb.Payment_date,\nb.Policy_type\nfrom [dbo.].[Insurance_Customer] a \njoin [dbo.].[Insurance_Premium] b on a.Customer_ID = b.Customer_id;\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapsededicatedpool",
+				"poolName": "synapsededicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 12",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [R_No]\n,[Customer_id]\n,[Customer_Name]\n,[Address]\n,[City]\n,[State]\n,[Zip_Code]\n,[Phone_number]\n,[Gender]\n,[Policy_id]\n,[Policy_status]\n,[Policy_Year]\n,[Policy_start_date]\n,[Policy_end_date]\n,[Premium_amount]\n,[payment_method]\n,[Payment_date]\n,[Policy_type]\n FROM [dbo].[Insurance_Data_Premium]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapsededicatedpool",
+				"poolName": "synapsededicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

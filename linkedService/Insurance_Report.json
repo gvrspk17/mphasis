@@ -1,0 +1,12 @@
+{
+	"name": "Insurance_Report",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "PowerBIWorkspace",
+		"typeProperties": {
+			"workspaceID": "99d24613-2149-4476-9bd0-47a5052b6ee5",
+			"tenantID": "b176a0b3-5841-42ca-abbc-574d4808ba09"
+		}
+	}
+}

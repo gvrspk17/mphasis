@@ -1,0 +1,17 @@
+{
+	"name": "SqlPool_Premium",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo.",
+			"table": "Insurance_Premium"
+		},
+		"sqlPool": {
+			"referenceName": "synapsededicatedpool",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

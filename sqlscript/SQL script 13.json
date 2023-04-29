@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 13",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [Claim_id]\n,[Customer_id]\n,[Date_of_loss]\n,[Date_reported]\n,[Claim_type]\n,[Claim_amount]\n,[Claim_status\n]\n FROM [dbo.].[Insurance_Claims]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapsededicatedpool",
+				"poolName": "synapsededicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "MetadataDrivenCopyTask_m9a_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ControlTable",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_m9a_20230404"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "MainControlTable",
+			"table": "MainControlTable_m9a"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
