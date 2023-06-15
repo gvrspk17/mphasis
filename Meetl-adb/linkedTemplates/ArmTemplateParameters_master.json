@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Meetl-adb"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"FileServer1_password": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0421-133106-15ugq5h0"
+		},
+		"AzureDatabricksIntgeration_properties_typeProperties_existingClusterId": {
+			"value": "0610-061721-595xbffk"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://meetl-kv-2.vault.azure.net/"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "\\\\MeetlDevbox\\c$\\source"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "deadmin"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
