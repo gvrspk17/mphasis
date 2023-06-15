@@ -1,0 +1,6 @@
+{
+	"name": "Meetl-Local-Server",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

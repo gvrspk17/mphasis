@@ -1,0 +1,9 @@
+{
+	"name": "Meetl-adb",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "16e1ecde-b58a-4778-8c4a-31d9ce179339",
+		"tenantId": "665b6c62-7310-4d39-9abb-32a0cbc3b90f"
+	}
+}

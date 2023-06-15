@@ -1,0 +1,17 @@
+{
+	"name": "FileServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "\\\\MeetlDevbox\\c$\\source",
+			"userId": "deadmin",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwNGE5MjhkOC1jOTE0LTQxOGYtYjdiYS1hZTA3MjUxZTk5ZDEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "Meetl-Local-Server",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
