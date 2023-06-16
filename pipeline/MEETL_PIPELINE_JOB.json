@@ -133,7 +133,8 @@
 		],
 		"parameters": {
 			"config_file_for_ingestion": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "meetl/meetl/config_file/config_file_for_data_preparation.ini  i"
 			},
 			"container": {
 				"type": "string",
